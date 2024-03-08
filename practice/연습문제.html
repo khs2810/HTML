@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제1</title>
+</head>
+
+<body>
+    <br>
+    고객명 : <input type="text" > <br><br> <!-- 인라인 요소 : 블럭이었으면 한칸 아래로 떨어져야 한다-->
+    전화번호 : <input type="text"> <br><br>
+    E-mail : <input type="text">
+
+    <form action="">
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <input type="radio" name="size" id="size-small"> <!-- id값을 줘야 박스내 선택메뉴가 하나의 구성이라고 인식. 한개만 선택 가능 --> 
+            <label for="size-small">Small</label><br><br>
+            <input type="radio" name="size" id="size-Medium">
+            <label for="size-Medium">Medium</label><br><br>
+            <input type="radio" name="size" id="size-Large">
+            <label for="size-Large">Large</label><br><br>
+        </fieldset><br>
+        <!-- name값을 줘야 전달 가능-->
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <input type="checkbox" name="topping" id="topping-베이컨"> 
+            <label for="topping-베이컨">베이컨</label> <br><br>
+            <input type="checkbox" id="topping-치즈">
+            <label for="topping-치즈">치즈</label> <br><br>
+            <input type="checkbox" id="topping-양파">
+            <label for="topping-양파">양파</label> <br><br>
+            <input type="checkbox" id="topping-버섯">
+            <label for="topping-버섯">버섯</label> <br><br>
+        </fieldset>
+        
+        <br>
+
+        희망 배송 시간 : <input type="time" name="dtime"> <br><br>
+        배송 시 요청사항 : <textarea name="" cols="20" rows="2"></textarea>
+        <br><br>
+        <input type="submit" value="주문하기">
+        <!-- form태그 안에선 submit 이어야 value값을 넘겨줌-->
+    </form>
+
+    
+
+</body>
+
+</html>
